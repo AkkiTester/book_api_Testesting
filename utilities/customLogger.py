@@ -5,7 +5,7 @@ class LogGen:
     def loggen():
         loggerName = inspect.stack()[1][3]
         logger = logging.getLogger(loggerName)
-        fileHandler = logging.FileHandler(r'C:\Users\ADMIN\Desktop\book_api_Testesting\Log\automation.log',mode='a')
+        fileHandler = logging.FileHandler(r'C:\Users\ADMIN\Desktop\book_api_Testesting\Log\automation.log')
         formatter = logging.Formatter("%(asctime)s :%(levelname)s : %(name)s :%(message)s")
         fileHandler.setFormatter(formatter)
 

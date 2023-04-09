@@ -10,9 +10,9 @@ class ReadConfig():
         return baseUrl
 
     @staticmethod
-    def getUseremail():
-        username=config.get('common info','useremail')
-        return username
+    def getUrlStatus():
+        status=config.get('common info','status')
+        return status
 
     @staticmethod
     def getPassword():
