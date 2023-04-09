@@ -15,6 +15,6 @@ class ReadConfig():
         return status
 
     @staticmethod
-    def getPassword():
-        password=config.get('common info','password')
-        return password
+    def getAuth():
+        auth=config.get('common info','auth')
+        return auth
