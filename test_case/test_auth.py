@@ -22,5 +22,7 @@ def test_token_gen():
 def test_token_gen_alredy_used_email():
     LogGen.loggen().info("************Test_Auth_URL_gen_alredy_used_email***********")
     response=requests.post(ReadConfig.getAuth(),json=data)
+    print(response.status_code)
+    print(response.text)
     assert response.status_code==409
     LogGen.loggen().info("************Test_Auth_URl_gen_alredy_used_email_passed***********")
