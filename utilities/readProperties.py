@@ -18,3 +18,8 @@ class ReadConfig():
     def getAuth():
         auth=config.get('common info','auth')
         return auth
+
+    @staticmethod
+    def getBooks():
+        books = config.get('common info', 'books')
+        return books
